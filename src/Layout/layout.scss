@@ -1,0 +1,30 @@
+$gap: 10px;
+.page {
+  height: 100%;
+  .nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    column-gap: $gap;
+    padding: 10px;
+  }
+  .content {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: $gap;
+
+    .col {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: $gap;
+    }
+  }
+
+  .footer {
+    height: 100px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: $gap;
+  }
+}
